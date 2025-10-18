@@ -1,0 +1,266 @@
+/* -------------------- General Styling -------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+nav {
+    background: #2c3e50;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* -------------------- Common Containers -------------------- */
+.container, 
+.about-container, 
+.sw-container {
+    width: 85%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* -------------------- Hero Section (Home) -------------------- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-img {
+    border-radius: 20%; /* Changeable shape */
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hero Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f39c12;
+    transform: scale(1.05);
+}
+
+/* -------------------- Banner Sections -------------------- */
+.about-banner,
+.sw-banner {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation: fadeIn 1.5s ease;
+}
+
+.about-banner {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+}
+
+.sw-banner {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.about-banner h1,
+.sw-banner h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.about-banner p,
+.sw-banner p {
+    font-size: 18px;
+}
+
+/* -------------------- About Page -------------------- */
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #3498db;
+}
+
+/* About Sections */
+.about-section {
+    text-align: left;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Unique colors */
+.about-section:nth-of-type(1) {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Education */
+}
+.about-section:nth-of-type(2) {
+    background: linear-gradient(135deg, #8e44ad, #c0392b); /* Hobbies */
+}
+.about-section:nth-of-type(3) {
+    background: linear-gradient(135deg, #d1a658, #63dfdd); /* Extracurricular */
+}
+
+button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+/* Hover Effect */
+.about-section:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Section Titles */
+.about-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* List Items */
+.about-section ul,
+.sw-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-section li,
+.sw-card li {
+    font-size: 18px;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Highlight */
+.about-section li:hover,
+.sw-card li:hover {
+    color: #ffd700;
+}
+
+/* -------------------- Strengths & Weakness Page -------------------- */
+.sw-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.sw-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Strengths Card */
+.strengths {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+/* Weaknesses Card */
+.weaknesses {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+/* Hover Effects */
+.sw-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Titles */
+.sw-card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* -------------------- Animations -------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
